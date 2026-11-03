@@ -472,6 +472,7 @@ impl Pool {
                             "Failed to connect to ClickHouse due to non-retriable IO error: {}",
                             err
                         );
+                        return result;
                     }
                 }
                 Err(_) => return result,
